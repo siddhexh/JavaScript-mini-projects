@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+html {
+    margin: 0;
+    background-color: #F7F3EE;
+}
+
+h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 50px;
+    font-width: 50px;
+    font-weight: 900;
+    color: #1e0144;
+}
+
+h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500px;
+    color: rgba(0, 0, 0, 0.83);
+}
+
+nav {
+    background-color: #2B1B3D;
+    padding: 8px 40px;
+}
+
+nav a {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+span {
+  display: block;
+}
+
+.canvas {
+  margin: 80px auto 80px;
+  width: 80%;
+  text-align: center;
+}
+
+.button {
+  width: 300px;
+  height: 200px;
+  /* border: solid black 1px; */
+  display: inline-block;
+  border-radius: 20px;
+  margin: 2px;
+
+  cursor: pointer;
+}
+
+.button:hover {
+    background-color: #55339B;
+    transform: translateY(-4px);
+}
+
+#reset {
+    height: 70px;
+    width: 150px;
+    display: block;
+    margin: 20px auto;
+
+    padding: 10px 24px;
+    border: none;
+    border-radius: 10px;
+
+    background-color: #2B1B3D;
+    color: white;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: #55339B;
+    transform: translateY(-4px);
+}
+
+#indianRed {
+    background-color: #C44D58;
+}
+
+#firebrick {
+    background-color: #B80036;
+}
+
+#turquoise {
+    background-color: #40F4E6;
+}
+
+#indigo {
+    background-color: #4A1D7E;
+}

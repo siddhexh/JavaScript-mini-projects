@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+html {
+    background-color: #99b6ad;
+}
+
+nav {
+    background-color: #073a17;
+    padding: 8px 40px;
+}
+
+nav a {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.container {
+    height: 1000px;
+
+  background-color: #d4eebd;
+  padding-left: 30px auto 30px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    font-size: 75px;
+    font-width: 50px;
+    font-weight: 900;
+    color: #073a17;
+    padding-left: 15px;
+    padding-top: 25px;
+}
+
+p {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.83);
+}
+
+label {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+input {
+    width: 175px;
+    height: 40px;
+    padding: 0 10px;
+
+    border: 2px solid #b7c9a8;
+    border-radius: 10px;
+
+    background-color: white;
+    color: #073a17;
+
+    font-size: 20px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input::placeholder {
+    color: #888;
+    font-size: 17px;
+}
+
+input:focus {
+    border-color: #073a17;
+    box-shadow: 0 0 0 4px rgba(7, 58, 23, 0.12);
+}
+
+#results {
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    color: #064E3B;
+}
+
+#range {
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    color: #064E3B;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin: 25px auto 25px;
+    background-color: #073a17;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #99b6ad;
+    transform: translateY(-2px);
+}
+
+#weight-guide {
+    text-align: center;
+    margin: 100px auto;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.guide {
+    text-align: center;
+
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
