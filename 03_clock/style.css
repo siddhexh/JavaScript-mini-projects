@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: #000000;
+    color: #ffffff;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "SF Pro Text",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+}
+
+/* Navigation */
+
+nav {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+nav button {
+    padding: 2px 7px;
+
+    border: 1px solid #d0d0d0;
+    border-radius: 2px;
+
+    background-color: #ffffff;
+    color: #000000;
+
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+/* Main Clock */
+
+.center {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    transform: translateY(-150px);
+}
+
+
+/* Greeting */
+
+#banner {
+    margin-bottom: 15px;
+
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+
+
+/* Date */
+
+#date {
+    padding: 20px 40px;
+
+    margin-bottom: 12px;
+
+    background-color: #ff9500;
+    color: #ffffff;
+
+    border-radius: 20px;
+
+    font-size: 28px;
+    font-weight: 500;
+
+    letter-spacing: -0.02em;
+}
+
+
+/* Clock */
+
+#clock {
+    display: flex;
+    align-items: baseline;
+
+    padding: 20px 40px;
+
+    background-color: #1c1c1e;
+
+    border-radius: 30px;
+
+    font-weight: 300;
+
+    letter-spacing: -0.04em;
+}
+
+
+/* Main time */
+
+#time {
+    font-size: clamp(5rem, 9vw, 8rem);
+    font-weight: 300;
+    line-height: 1;
+}
+
+
+/* AM / PM */
+
+#period {
+    margin-left: 12px;
+
+    font-size: 2rem;
+    font-weight: 400;
+
+    letter-spacing: -0.02em;
+}
+
+/* 12 / 24 HOUR SLIDER */
+
+#toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.toggle-label {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+
+/* Slider container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 32px;
+}
+
+/* Hide checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Track */
+.slider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    background: #2a2a2c;
+    border-radius: 999px;
+    transition: 0.25s ease;
+}
+
+/* Sliding circle */
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 3px;
+    top: 3px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.25s ease;
+}
+
+/* 12H selected */
+.switch input:checked + .slider {
+    background: #ff9500;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(32px);
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .center {
+        transform: translateY(-80px);
+    }
+
+    #banner {
+        font-size: 20px;
+    }
+
+    #date {
+        padding: 15px 25px;
+        font-size: 20px;
+        border-radius: 16px;
+    }
+
+    #clock {
+        padding: 18px 25px;
+        border-radius: 24px;
+    }
+
+    #time {
+        font-size: 4rem;
+    }
+
+    #period {
+        font-size: 1.2rem;
+        margin-left: 8px;
+    }
+}
+
+ /* HOME BUTTON */
+
+nav {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav button {
+    appearance: none;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.06);
+    color: #ffffff;
+
+    padding: 10px 20px;
+    border-radius: 999px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    transition: all 0.25s ease;
+}
+
+nav button:hover {
+    background: #ff9500;
+    border-color: #ff9500;
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 24px rgba(255, 149, 0, 0.25);
+}
+
+nav button:active {
+    transform: translateY(0);
+}
