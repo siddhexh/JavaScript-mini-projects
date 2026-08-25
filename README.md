@@ -9,6 +9,7 @@ A collection of mini frontend projects built while learning and practicing **HTM
 | 01 | 🎨 Color Scheme Changer | [View Live](https://siddhexh.github.io/JavaScript-mini-projects/01_color-scheme-changer/) |
 | 02 | 🧮 BMI Calculator       | [View Live](https://siddhexh.github.io/JavaScript-mini-projects/02_bmi-calculator/)       |
 | 03 | 🕐 Digital Clock        | [View Live](https://siddhexh.github.io/JavaScript-mini-projects/03_clock/)                |
+| 04 | 🎯 Guess the Number     | [View Live](https://siddhexh.github.io/JavaScript-mini-projects/04_guess-the-num/)        |
 
 ## 📂 Projects
 
@@ -29,6 +30,12 @@ A BMI calculator that takes height and weight as input and calculates the user's
 A responsive digital clock displaying the current date and time with a **12-hour / 24-hour slider**.
 
 **Concepts:** Date object, `Intl.DateTimeFormat`, DOM manipulation, event listeners, responsive CSS.
+
+### 04 — Guess the Number
+
+A number guessing game where the player tries to guess a randomly generated number between **1 and 100** within a limited number of attempts.
+
+**Concepts:** `Math.random()`, DOM manipulation, event listeners, input validation, arrays, conditional logic, and game state management.
 
 ## 🛠️ Technologies
 
