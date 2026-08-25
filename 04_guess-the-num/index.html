@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">      <!-- charecter encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tells browser to match device width -->
+
+<title>Guess the Number</title> <!-- is displayed on webpage heading -->
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+<main class="game">
+
+    <section class="game-card">
+
+        <div class="header">
+            <span class="eyebrow">NUMBER GAME</span>
+
+            <h1>Guess the Number</h1>
+
+            <p>
+                I'm thinking of a number between
+                <strong>1</strong> and <strong>100</strong>.
+            </p>
+        </div>
+
+
+        <div class="number-display">
+            <span id="secret-num">?</span>
+        </div>
+
+
+        <div class="input-section">
+
+            <label for="guess">Your guess</label>
+
+            <div class="guess-row">
+
+                <input
+                    type="number"
+                    id="guess"
+                    placeholder="Enter a number"
+                    min="1"
+                    max="100"
+                >
+
+                <button id="guess-btn">
+                    Guess
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="message">
+            <p id="result">
+                Make your first guess!
+            </p>
+        </div>
+
+
+        <div class="stats">
+
+            <div class="stat">
+                <span class="stat-label">Attempts remaining</span>
+                <span class="stat-value" id="attempts">10</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="stat">
+                <span class="stat-label">Range</span>
+                <span class="stat-value">1–100</span>
+            </div>
+
+        </div>
+
+
+        <button class="reset-btn" id="reset-btn">
+            New Game
+        </button>
+
+    </section>
+
+</main>
+
+<script src="back.js"></script>
+
+</body>
+
+</html>
